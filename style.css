@@ -1,0 +1,173 @@
+
+body {
+    background-color: #2f3b48; 
+    color: #e1e1e1; 
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #4b6cb7, #182848); /* Modern gradient for navbar */
+    border-bottom: 3px solid #1c2c48; /* Darker shade for border */
+    padding: 10px 30px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar .btn-info {
+    background-color: #ff0088; /* Bright blue for user manual button */
+    border-color: #007bff;
+    color: #fff;
+}
+
+.navbar .btn-info:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Card Styling */
+.card_info {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    background-color: #333333; /* Dark background for cards */
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.card_info:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Add a subtle zoom effect */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Title */
+h5.card-title {
+    color: #8f7bff; /* Soft purple for titles */
+    font-size: 1.3rem;
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+/* Success (On) Button */
+.btn-success {
+    background-color: #6a1b9a; /* Purple background */
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #9c4dcc; /* Lighter purple on hover */
+}
+
+/* Danger (Off) Button */
+.btn-danger {
+    background-color: #d32f2f; /* Red background */
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #f44336; /* Lighter red on hover */
+}
+
+/* User Manual */
+.user-manual {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.manual-content {
+    background-color: #292b2f; /* Dark background for the manual */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    color: #fff; /* Light text for readability */
+}
+
+/* Close button for user manual */
+button#close-manual {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2fd376; /* Red button for closing */
+    color: white;
+}
+
+/* Charts */
+canvas {
+    width: 100% !important;
+    height: 500px !important; /* Adjusted height for better appearance */
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Improve the graph axis and ticks */
+.chartjs-render-monitor {
+    font-size: 12px; /* Adjust the font size of the graph */
+}
+
+.chartjs-axis {
+    color: #ddd; /* Make axis text lighter */
+}
+
+/* Row spacing */
+.row {
+    margin-bottom: 30px;
+}
+
+/* Centered text */
+.text-center {
+    color: #ffffff; /* White text for headings */
+}
+
+/* Hover effect for cards and buttons */
+.card, button {
+    transition: transform 0.2s ease;
+}
+
+.card:hover, button:hover {
+    transform: scale(1.05);
+}
+
+/* Chart points and lines color adjustment */
+.chartjs-line {
+    border-color: #4dff5f; /* Adjust line color */
+    background-color: transparent;
+}
+
+.chartjs-point {
+    background-color: #4dbeff; /* Bright purple for data points */
+    border-color: #ffffff;
+    border-width: 2px;
+}
+
+/* Fix for graph scaling issues */
+.chartjs-container {
+    margin-bottom: 40px;
+}
